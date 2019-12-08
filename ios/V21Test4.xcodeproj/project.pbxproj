@@ -8,13 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* V21Test4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* V21Test4Tests.m */; };
-		127EF79F239649160077D59C /* GCViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 127EF79E239649160077D59C /* GCViewManager.m */; };
-		127EF7A223964AC60077D59C /* GCNotifyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 127EF7A123964AC60077D59C /* GCNotifyView.m */; };
-		127EF7A823966DA90077D59C /* GCCoordinatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 127EF7A723966DA90077D59C /* GCCoordinatorView.m */; };
-		127EF7AB23966DBD0077D59C /* GCCoordinatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 127EF7AA23966DBD0077D59C /* GCCoordinatorManager.m */; };
-		127EF7AF23967AA80077D59C /* GCNotifyVisiableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 127EF7AE23967AA80077D59C /* GCNotifyVisiableModel.m */; };
-		127EF7B2239742360077D59C /* GCScrollItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 127EF7B1239742360077D59C /* GCScrollItemView.m */; };
-		127EF7BB2397511D0077D59C /* GCScrollItemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 127EF7BA2397511D0077D59C /* GCScrollItemManager.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -47,25 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00E356EE1AD99517003FC87E /* V21Test4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = V21Test4Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* V21Test4Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = V21Test4Tests.m; sourceTree = "<group>"; };
 		0D396D7C2F62DAC834456B19 /* Pods-V21Test4-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-V21Test4-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-V21Test4-tvOSTests/Pods-V21Test4-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		127EF79D239649160077D59C /* GCViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GCViewManager.h; path = V21Test4/GCViewManager.h; sourceTree = "<group>"; };
-		127EF79E239649160077D59C /* GCViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GCViewManager.m; path = V21Test4/GCViewManager.m; sourceTree = "<group>"; };
-		127EF7A023964AC60077D59C /* GCNotifyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GCNotifyView.h; path = V21Test4/GCNotifyView.h; sourceTree = "<group>"; };
-		127EF7A123964AC60077D59C /* GCNotifyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GCNotifyView.m; path = V21Test4/GCNotifyView.m; sourceTree = "<group>"; };
-		127EF7A623966DA90077D59C /* GCCoordinatorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GCCoordinatorView.h; path = V21Test4/GCCoordinatorView.h; sourceTree = "<group>"; };
-		127EF7A723966DA90077D59C /* GCCoordinatorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GCCoordinatorView.m; path = V21Test4/GCCoordinatorView.m; sourceTree = "<group>"; };
-		127EF7A923966DBD0077D59C /* GCCoordinatorManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GCCoordinatorManager.h; path = V21Test4/GCCoordinatorManager.h; sourceTree = "<group>"; };
-		127EF7AA23966DBD0077D59C /* GCCoordinatorManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GCCoordinatorManager.m; path = V21Test4/GCCoordinatorManager.m; sourceTree = "<group>"; };
-		127EF7AD23967AA80077D59C /* GCNotifyVisiableModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GCNotifyVisiableModel.h; path = V21Test4/Models/GCNotifyVisiableModel.h; sourceTree = "<group>"; };
-		127EF7AE23967AA80077D59C /* GCNotifyVisiableModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GCNotifyVisiableModel.m; path = V21Test4/Models/GCNotifyVisiableModel.m; sourceTree = "<group>"; };
-		127EF7B0239742360077D59C /* GCScrollItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GCScrollItemView.h; path = V21Test4/GCScrollItemView.h; sourceTree = "<group>"; };
-		127EF7B1239742360077D59C /* GCScrollItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GCScrollItemView.m; path = V21Test4/GCScrollItemView.m; sourceTree = "<group>"; };
-		127EF7B92397511D0077D59C /* GCScrollItemManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GCScrollItemManager.h; path = V21Test4/GCScrollItemManager.h; sourceTree = "<group>"; };
-		127EF7BA2397511D0077D59C /* GCScrollItemManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GCScrollItemManager.m; path = V21Test4/GCScrollItemManager.m; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* V21Test4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = V21Test4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = V21Test4/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = V21Test4/AppDelegate.m; sourceTree = "<group>"; };
@@ -143,38 +121,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		127EF7AC23967A630077D59C /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				127EF7AD23967AA80077D59C /* GCNotifyVisiableModel.h */,
-				127EF7AE23967AA80077D59C /* GCNotifyVisiableModel.m */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
 		13B07FAE1A68108700A75B9A /* V21Test4 */ = {
 			isa = PBXGroup;
 			children = (
-				127EF7AC23967A630077D59C /* Models */,
-				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
-				127EF79D239649160077D59C /* GCViewManager.h */,
-				127EF79E239649160077D59C /* GCViewManager.m */,
-				127EF7A023964AC60077D59C /* GCNotifyView.h */,
-				127EF7A123964AC60077D59C /* GCNotifyView.m */,
-				127EF7A623966DA90077D59C /* GCCoordinatorView.h */,
-				127EF7A723966DA90077D59C /* GCCoordinatorView.m */,
-				127EF7A923966DBD0077D59C /* GCCoordinatorManager.h */,
-				127EF7AA23966DBD0077D59C /* GCCoordinatorManager.m */,
-				127EF7B0239742360077D59C /* GCScrollItemView.h */,
-				127EF7B1239742360077D59C /* GCScrollItemView.m */,
-				127EF7B92397511D0077D59C /* GCScrollItemManager.h */,
-				127EF7BA2397511D0077D59C /* GCScrollItemManager.m */,
 			);
 			name = V21Test4;
 			sourceTree = "<group>";
@@ -571,15 +526,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				127EF7B2239742360077D59C /* GCScrollItemView.m in Sources */,
-				127EF7AF23967AA80077D59C /* GCNotifyVisiableModel.m in Sources */,
-				127EF79F239649160077D59C /* GCViewManager.m in Sources */,
-				127EF7A823966DA90077D59C /* GCCoordinatorView.m in Sources */,
-				127EF7AB23966DBD0077D59C /* GCCoordinatorManager.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
-				127EF7A223964AC60077D59C /* GCNotifyView.m in Sources */,
-				127EF7BB2397511D0077D59C /* GCScrollItemManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

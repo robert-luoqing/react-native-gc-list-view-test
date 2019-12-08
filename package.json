@@ -11,7 +11,7 @@
   "dependencies": {
     "react": "16.9.0",
     "react-native": "0.61.2",
-    "react-native-gc-list-view": "^1.0.12"
+    "react-native-gc-list-view": "^1.0.14"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
