@@ -97,7 +97,9 @@ class App extends React.PureComponent<any, any> {
           <GCListView
             renderItem={this.renderItem}
             data={this.state.data}
-            itemLayouts={this.state.itemLayouts}>
+            itemLayouts={this.state.itemLayouts}
+            invertStickyHeaders = {true}
+            >
           </GCListView>
         </SafeAreaView>
       </>
