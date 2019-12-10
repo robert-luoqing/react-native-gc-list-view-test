@@ -40,7 +40,7 @@ class App extends React.PureComponent<any, any> {
   constructor(props: any) {
     super(props);
     const data = [];
-    for (let i = 0; i < 100000; i++) {
+    for (let i = 0; i < 10000; i++) {
       data.push({
         title: "The data is: " + i,
         url: this.uris[i % 10]
@@ -72,7 +72,7 @@ class App extends React.PureComponent<any, any> {
     data = data || [];
     const result: GCRelevantData[] = [];
     let lastOffset = 0;
-
+    let index=0;
     for (const item of data) {
 
       const height = 50;
@@ -80,10 +80,12 @@ class App extends React.PureComponent<any, any> {
       let category = "";
 
       result.push({
-        key: item.key,
+        key: index.toString(),
         offset: lastOffset,
         category
       });
+
+      index++;
     }
 
     return result;
@@ -94,17 +96,18 @@ class App extends React.PureComponent<any, any> {
       <>
         <StatusBar barStyle="dark-content" />
         <SafeAreaView>
-          <View>
+          {/* <View style={{flex: 1}}> */}
             <GCListView
               renderItem={this.renderItem}
               data={this.state.data}
               relevantData={this.state.itemLayouts}
               preloadFrame={0}
               invertStickyHeaders={true}
-              invert={true}>
+              // invert={true}
               >
-          </GCListView>
-          </View>
+              >
+            </GCListView>
+          {/* </View> */}
         </SafeAreaView>
       </>
     );
