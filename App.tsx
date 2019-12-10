@@ -21,7 +21,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 
-import GCListView from 'react-native-gc-list-view';
+import { GCListView, GCRelevantData } from 'react-native-gc-list-view/src/gcListView';
 
 class App extends React.PureComponent<any, any> {
   uris = [
@@ -49,7 +49,7 @@ class App extends React.PureComponent<any, any> {
 
     this.state = {
       data: data,
-      itemLayouts: this.calcItemLayout(data, true)
+      itemLayouts: this.calcItemLayout(data)
     }
 
     // setTimeout(() => {
@@ -68,25 +68,25 @@ class App extends React.PureComponent<any, any> {
     // }, 10000);
   }
 
-  calcItemLayout(data: any[], regularHeight: boolean): number[] {
+  calcItemLayout(data: any[]): GCRelevantData[] {
     data = data || [];
-    const itemLayouts: number[] = [];
+    const result: GCRelevantData[] = [];
     let lastOffset = 0;
-    let height = 50;
-    for (let i = 0; i < data.length; i++) {
-      lastOffset += height;
-      if (!regularHeight) {
-        if (height > 120) {
-          height = 50
-        } else {
-          height = height + 10;
-        }
-      }
 
-      itemLayouts.push(lastOffset);
+    for (const item of data) {
+
+      const height = 50;
+      lastOffset += height;
+      let category = "";
+
+      result.push({
+        key: item.key,
+        offset: lastOffset,
+        category
+      });
     }
 
-    return itemLayouts;
+    return result;
   }
 
   render() {
@@ -94,13 +94,17 @@ class App extends React.PureComponent<any, any> {
       <>
         <StatusBar barStyle="dark-content" />
         <SafeAreaView>
-          <GCListView
-            renderItem={this.renderItem}
-            data={this.state.data}
-            itemLayouts={this.state.itemLayouts}
-            invertStickyHeaders = {true}
-            >
+          <View>
+            <GCListView
+              renderItem={this.renderItem}
+              data={this.state.data}
+              relevantData={this.state.itemLayouts}
+              preloadFrame={0}
+              invertStickyHeaders={true}
+              invert={true}>
+              >
           </GCListView>
+          </View>
         </SafeAreaView>
       </>
     );
